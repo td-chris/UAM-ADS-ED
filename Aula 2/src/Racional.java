@@ -23,7 +23,7 @@ public class Racional {
         return denominador;
     }
 
-    public  void multiplica(Racional R){
+    public  void multiplicar(Racional R){
         numerador = numerador*R.numerador;
         denominador = denominador*R.denominador;
     }
@@ -40,6 +40,16 @@ public class Racional {
         R.numerador = R.numerador * denominador;
 
         setNumerador(numerador + R.numerador);
+        setDenominador(aux);
+    }
+
+    public void subtrair(Racional R) {
+        int aux = denominador * R.denominador;
+
+        numerador = numerador * R.denominador;
+        R.numerador = R.numerador * denominador;
+
+        setNumerador(numerador - R.numerador);
         setDenominador(aux);
     }
 }
