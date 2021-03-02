@@ -62,6 +62,11 @@ public class Racional {
         simplificar();
     }
 
+    public void quadrado(Racional R) {
+        numerador = numerador * numerador;
+        denominador = denominador * denominador;
+    }
+
     private void simplificar () {
         for (int i = 2; i < denominador; i++){
             while (numerador % i == 0 && denominador % i == 0) {
