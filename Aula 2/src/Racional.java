@@ -52,4 +52,13 @@ public class Racional {
         setNumerador(numerador - R.numerador);
         setDenominador(aux);
     }
+
+    public void simplificar () {
+        for (int i = 2; i < denominador; i++){
+            while (numerador % i == 0 && denominador % i == 0) {
+                numerador = numerador / i;
+                denominador = denominador / i;
+            }
+        }
+    }
 }
