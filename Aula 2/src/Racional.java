@@ -5,14 +5,17 @@ public class Racional {
     public Racional (int num, int den){
         numerador = num;
         denominador = den;
+        simplificar();
     }
 
     public void setNumerador(int num) {
         this.numerador = num;
+        simplificar();
     }
 
     public void setDenominador(int den) {
         this.denominador = den;
+        simplificar();
     }
 
     public int getNumerador() {
@@ -26,11 +29,15 @@ public class Racional {
     public  void multiplicar(Racional R){
         numerador = numerador*R.numerador;
         denominador = denominador*R.denominador;
+
+        simplificar();
     }
 
     public void dividir(Racional R){
         numerador = numerador*R.denominador;
         denominador = denominador*R.numerador;
+
+        simplificar();
     }
 
     public void somar(Racional R) {
@@ -41,6 +48,8 @@ public class Racional {
 
         setNumerador(numerador + R.numerador);
         setDenominador(aux);
+
+        simplificar();
     }
 
     public void subtrair(Racional R) {
@@ -51,9 +60,11 @@ public class Racional {
 
         setNumerador(numerador - R.numerador);
         setDenominador(aux);
+
+        simplificar();
     }
 
-    public void simplificar () {
+    private void simplificar () {
         for (int i = 2; i < denominador; i++){
             while (numerador % i == 0 && denominador % i == 0) {
                 numerador = numerador / i;
