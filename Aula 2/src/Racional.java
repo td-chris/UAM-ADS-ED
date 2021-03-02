@@ -10,12 +10,10 @@ public class Racional {
 
     public void setNumerador(int num) {
         this.numerador = num;
-        simplificar();
     }
 
     public void setDenominador(int den) {
         this.denominador = den;
-        simplificar();
     }
 
     public int getNumerador() {
@@ -62,6 +60,11 @@ public class Racional {
         setDenominador(aux);
 
         simplificar();
+    }
+
+    public void quadrado(Racional R) {
+        numerador = numerador * numerador;
+        denominador = denominador * denominador;
     }
 
     private void simplificar () {
