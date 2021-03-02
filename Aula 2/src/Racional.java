@@ -10,12 +10,10 @@ public class Racional {
 
     public void setNumerador(int num) {
         this.numerador = num;
-        simplificar();
     }
 
     public void setDenominador(int den) {
         this.denominador = den;
-        simplificar();
     }
 
     public int getNumerador() {
