@@ -11,9 +11,15 @@ public class colecoes {
     private int dados[]; //Vetor da coleção
     private int num; //Posição da próxima inserção
 
+    //construtor
     public colecoes(int maximo){
         this.dados = new int[maximo];
         this.num = 0;
     }
 
+
+    //inserção
+    public void inserir(int elem) {
+        this.dados[num] = elem;
+    }
 }
