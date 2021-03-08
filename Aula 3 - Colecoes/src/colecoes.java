@@ -8,6 +8,11 @@ public class colecoes {
     Imprimir a coleção
      */
 
+    private int dados[]; //Vetor da coleção
+    private int num; //Posição da próxima inserção
 
+    public Colecoes(int maximo){
+        this.dados = new int[maximo];
+    }
 
 }
