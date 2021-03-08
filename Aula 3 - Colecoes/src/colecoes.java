@@ -13,6 +13,7 @@ public class colecoes {
 
     public Colecoes(int maximo){
         this.dados = new int[maximo];
+        this.num = 0;
     }
 
 }
