@@ -19,7 +19,10 @@ public class colecoes {
 
     //inserção
     public void inserir(int elem) {
-        this.dados[num] = elem;
-        this.num++;
+        if (this.num < this.dados.length) {
+            this.dados[num] = elem;
+            this.num++;
+        }
+
     }
 }
