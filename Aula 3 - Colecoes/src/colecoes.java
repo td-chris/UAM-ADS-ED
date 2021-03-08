@@ -17,9 +17,9 @@ public class colecoes {
         this.num = 0;
     }
 
-
     //inserção
     public void inserir(int elem) {
         this.dados[num] = elem;
+        this.num++;
     }
 }
