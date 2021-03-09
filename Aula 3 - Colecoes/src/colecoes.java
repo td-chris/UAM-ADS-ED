@@ -31,4 +31,14 @@ public class colecoes {
             System.out.println(this.dados[i] + " ");
         }
     }
+
+    //busca
+    public boolean busca(int elem) {
+        for (int i = 0; i < this.num; i++) {
+            if (this.dados[i] == elem){
+                return true;
+            }
+            return false;
+        }
+    }
 }
