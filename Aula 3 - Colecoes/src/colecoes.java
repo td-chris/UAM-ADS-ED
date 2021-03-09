@@ -23,6 +23,12 @@ public class colecoes {
             this.dados[num] = elem;
             this.num++;
         }
+    }
 
+    //Imprimir o vetor
+    public void imprimir() {
+        for (int i = 0; i < this.num; i++) {
+            System.out.println(this.dados[i] + " ");
+        }
     }
 }
