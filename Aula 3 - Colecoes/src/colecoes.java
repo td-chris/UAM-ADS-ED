@@ -23,6 +23,43 @@ public class colecoes {
             this.dados[num] = elem;
             this.num++;
         }
+    }
 
+    //Imprimir o vetor
+    public void imprimir() {
+        for (int i = 0; i < this.num; i++) {
+            System.out.println(this.dados[i] + " ");
+        }
+    }
+
+    //busca
+    public boolean busca(int elem) {
+        for (int i = 0; i < this.num; i++) {
+            if (this.dados[i] == elem) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    //deletar
+    public boolean deletar(int elem) {
+        int i;
+
+        for (i=0 ; i < this.num ; i++) {
+            if (this.dados[i] == elem) {
+                break;
+            }
+        }
+
+            if (i == this.num) {
+                return false;
+            } else {
+                for (int k = i; k < this.num - 1; k++) {
+                    this.dados[k] = this.dados[k + 1];
+                }
+                this.num--;
+                return true;
+            }
     }
 }
