@@ -11,6 +11,12 @@ public class teste {
         C.inserir(19);
         C.inserir(0);
 
+        if(C.busca(13)) {
+            System.out.println("Valor 13 encontrado!");
+        }else {
+            System.out.println("Valor 13 não encontrado");
+        }
+
         C.imprimir();
     }
 }
