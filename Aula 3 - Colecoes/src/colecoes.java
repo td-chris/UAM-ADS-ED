@@ -41,4 +41,23 @@ public class colecoes {
         }
         return false;
     }
+
+    //deletar
+    public boolean deletar(int elem) {
+        for (int i=0 ; i < this.num ; i++){
+            if (this.dados[i] == elem){
+                break;
+            }
+
+            if (i == this.num) {
+                return false;
+            } else {
+                for (k = i; k < this.num - 1; k++){
+                    this.dados[k] = this.dados[k+1];
+                }
+                this.num--;
+                return true;
+            }
+        }
+    }
 }
