@@ -35,10 +35,10 @@ public class colecoes {
     //busca
     public boolean busca(int elem) {
         for (int i = 0; i < this.num; i++) {
-            if (this.dados[i] == elem){
+            if (this.dados[i] == elem) {
                 return true;
             }
-            return false;
         }
+        return false;
     }
 }

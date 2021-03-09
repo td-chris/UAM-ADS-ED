@@ -17,6 +17,15 @@ public class teste {
             System.out.println("Valor 13 não encontrado");
         }
 
+        C.inserir(5);
+
+        if(C.busca(5)) {
+            System.out.println("Valor 5 encontrado!");
+        }else {
+            System.out.println("Valor 5 não encontrado");
+        }
+
+
         C.imprimir();
     }
 }
