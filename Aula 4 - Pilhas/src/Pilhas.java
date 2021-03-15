@@ -48,5 +48,12 @@ public class Pilhas {
         }
     }
 
-    //
+    // Vazia
+    public boolean isEmpty(){
+        if (this.topo == 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
