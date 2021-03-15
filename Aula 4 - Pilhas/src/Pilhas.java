@@ -15,5 +15,13 @@ public class Pilhas {
         this.topo = 0;
     }
 
+    // Inserir
+    public void  push(int elem) {
+        if (this.dados.length > this.topo) {
+            this.dados[this.topo] = elem;
+            this.topo++;
+        }
+    }
 
+    //
 }
