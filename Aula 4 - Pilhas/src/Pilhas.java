@@ -5,7 +5,7 @@ public class Pilhas {
 
     // Stack estática de int
 
-    private int dade[];
+    private int dados[];
     private int topo;
 
     // Construtor
