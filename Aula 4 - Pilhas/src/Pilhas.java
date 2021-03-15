@@ -38,4 +38,15 @@ public class Pilhas {
             return -1;
         }
     }
+
+    // Cheia
+    public boolean isFull() {
+        if (this.topo == this.dados.length){
+            return true;
+        } else {
+            return false
+        }
+    }
+
+    //
 }
