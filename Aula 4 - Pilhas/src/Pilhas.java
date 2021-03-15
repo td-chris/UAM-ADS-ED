@@ -17,7 +17,8 @@ public class Pilhas {
 
     // Inserir
     public void  push(int elem) {
-        if (this.dados.length > this.topo) {
+        //if (this.dados.length > this.topo) {
+        if (!this.isFull()){
             this.dados[this.topo] = elem;
             this.topo++;
         }
@@ -30,7 +31,8 @@ public class Pilhas {
 
     // Remoção
     public int pop (){
-        if (this.topo > 0){
+        //if (this.topo > 0){
+        if (!this.isEmpty()) {
             this.topo--;
             return this.dados[this.topo];
         } else {
@@ -56,4 +58,11 @@ public class Pilhas {
             return false;
         }
     }
+
+    //Reset
+    public void reset() {
+        this.topo = 0;
+    }
 }
+
+
