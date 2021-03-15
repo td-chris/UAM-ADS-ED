@@ -46,7 +46,7 @@ public class Pilhas {
         if (this.topo == this.dados.length){
             return true;
         } else {
-            return false
+            return false;
         }
     }
 
