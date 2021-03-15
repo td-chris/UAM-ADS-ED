@@ -18,7 +18,7 @@ public class CharStack {
 
     // Size
     public int size(){
-        return this.topo();
+        return this.topo;
     }
 
     // Pop
