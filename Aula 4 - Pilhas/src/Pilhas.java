@@ -28,4 +28,14 @@ public class Pilhas {
         return this.topo;
     }
 
+    // Remoção
+    public int pop (){
+        if (this.topo > 0){
+            this.topo--;
+            return this.dados[this.topo];
+        } else {
+            System.out.println("Pilha Vazia");
+            return -1;
+        }
+    }
 }
