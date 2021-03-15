@@ -1,5 +1,5 @@
 public class Pilhas {
-    //Pilhas são conhecidas como stack
+    // Pilhas são conhecidas como stack
 
     // Stack estática - usando vetores
 
@@ -8,7 +8,7 @@ public class Pilhas {
     private int dade[];
     private int topo;
 
-    //Construtor
+    // Construtor
 
     public Pilhas(int max) {
         this.dados = new int[max];
@@ -23,5 +23,9 @@ public class Pilhas {
         }
     }
 
-    //
+    // Size
+    public int size() {
+        return this.topo;
+    }
+
 }
