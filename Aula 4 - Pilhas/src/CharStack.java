@@ -34,7 +34,7 @@ public class CharStack {
 
     // Full
     public boolean isFull(){
-        if (this.dados.length == this.topo){
+        if (this.topo == this.dados.length){
             return true;
         } else {
             return false;
