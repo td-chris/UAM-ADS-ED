@@ -13,6 +13,16 @@ public class Stack {
         if (this.topo == null)
             return true;
         else
-            return false
+            return false;
+    }
+
+    // Inserir
+    public void push(int elem) {
+        No novoNo = new No(elem);
+        No aux = topo; // posição de memória atual de topo
+
+        novoNo.prox = aux; // novoNo.prox recebe posição de memória atual de topo
+
+        this.topo = novoNo; //topo aponta para o novoNo
     }
 }
