@@ -55,13 +55,15 @@ public class teste {
 
                 double resultado = operador1 / operador2;
                 s.push(resultado);
-            } else {
-                double valor = Double.parseDouble(dado);
-                s.push(valor);
+            } else{
+                    double valor = Double.parseDouble(dado);
+                    s.push(valor);
             }
         }
 
-        System.out.println(s.pop());
-
+        if (s.size() == 1)
+            System.out.println(s.pop());
+        else
+            System.out.println("Expressão incorreta");
     }
 }
