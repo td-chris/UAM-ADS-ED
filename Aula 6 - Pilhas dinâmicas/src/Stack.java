@@ -38,4 +38,6 @@ public class Stack {
 
         return aux.dado;
     }
+
+
 }
