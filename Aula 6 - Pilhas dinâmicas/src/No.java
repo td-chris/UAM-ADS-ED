@@ -1,10 +1,10 @@
 public class No {
     // No de inteiros
 
-    public int dado;
+    public double dado;
     public No prox;
 
-    public No(int elem) {
+    public No(double elem) {
         this.dado = elem;
         this.prox = null;
     }
