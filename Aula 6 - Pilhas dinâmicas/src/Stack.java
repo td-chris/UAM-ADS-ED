@@ -17,7 +17,7 @@ public class Stack {
     }
 
     // Inserir
-    public void push(int elem) {
+    public void push(double elem) {
         No novoNo = new No(elem);
         No aux = topo; // posição de memória atual de topo
 
@@ -27,7 +27,7 @@ public class Stack {
     }
 
     // Remoção
-    public int pop() {
+    public double pop() {
         if (this.isEmpty()) {
             System.out.println("Pilha vazia");
             return -1;
