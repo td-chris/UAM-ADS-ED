@@ -39,5 +39,16 @@ public class Stack {
         return aux.dado;
     }
 
+    // Tamanho
+    public int size() {
+        int count = 0;
+        No aux = topo;
 
+        while (aux != null){
+            count++;
+            aux = aux.prox;
+        }
+
+        return count;
+    }
 }
