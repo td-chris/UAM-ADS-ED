@@ -48,7 +48,25 @@ public class Fila {
                 this.fim = 0;
             }
 
-            this.total++
+            this.total++;
+        }
+    }
+
+    //Remover
+    public int sai() {
+        if (this.vazia()) {
+            System.out.ptintln("Fila vazia");
+            return -1;
+        }else {
+            int res = this.dados[this.inicio];
+
+            this.inicio++;
+            if (this.inicio == this.dados.length)
+                this.inicio = 0;
+
+            this.total--;
+
+            return res
         }
     }
 
