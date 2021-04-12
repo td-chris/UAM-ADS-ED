@@ -15,5 +15,14 @@ public class Fila {
     }
 
     // Esta vazio?
+    public boolean vazia() {
+//        if (this.total==0){
+//            return true
+//        }else {
+//            return false;
+//        }
+
+        return (this.total == 0);
+    }
 
 }
