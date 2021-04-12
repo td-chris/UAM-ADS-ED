@@ -55,7 +55,7 @@ public class Fila {
     //Remover
     public int sai() {
         if (this.vazia()) {
-            System.out.ptintln("Fila vazia");
+            System.out.println("Fila vazia");
             return -1;
         }else {
             int res = this.dados[this.inicio];
@@ -66,7 +66,7 @@ public class Fila {
 
             this.total--;
 
-            return res
+            return res;
         }
     }
 
