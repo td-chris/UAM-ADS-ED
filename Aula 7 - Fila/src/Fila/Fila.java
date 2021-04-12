@@ -36,4 +36,20 @@ public class Fila {
         return (this.total == this.dados.length);
     }
 
+    //Inserir
+    public void entra(int elem) {
+        if(this.cheia()){
+            System.out.println("Fila cheia!");
+        } else {
+            this.dados[this.fim] = elem;
+
+            this.fim++;
+            if(this.fim == this.dados.length) {
+                this.fim = 0;
+            }
+
+            this.total++
+        }
+    }
+
 }
