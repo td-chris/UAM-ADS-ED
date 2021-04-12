@@ -10,6 +10,8 @@ public class teste {
         f.entra(4);
         f.entra(5);
 
+        System.out.println(f.tamanho());
+
         f.entra(6); //erro
 
         while (!f.vazia()) {
