@@ -17,12 +17,23 @@ public class Fila {
     // Esta vazio?
     public boolean vazia() {
 //        if (this.total==0){
-//            return true
+//            return true;
 //        }else {
 //            return false;
 //        }
 
         return (this.total == 0);
+    }
+
+    // Esta cheia ?
+    public boolean cheia (){
+//        if (this.total == this.dados.length){
+//            return true;
+//        }else {
+//            return false;
+//        }
+
+        return (this.total == this.dados.length);
     }
 
 }
