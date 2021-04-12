@@ -75,6 +75,15 @@ public class Fila {
         return  this.total;
     }
 
+    //Resetar
+    public void reset() {
+//        while (!this.vazia()){
+//            this.sai();
+//        }
+        this.total = 0;
+        this.inicio = 0;
+        this.fim = 0;
 
+    }
 
 }
