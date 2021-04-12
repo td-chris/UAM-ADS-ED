@@ -70,4 +70,11 @@ public class Fila {
         }
     }
 
+    // Tamanho
+    public int tamanho() {
+        return  this.total;
+    }
+
+
+
 }
