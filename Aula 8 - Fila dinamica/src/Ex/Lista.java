@@ -29,6 +29,25 @@ public class Lista {
         }
     }
 
+    // Existe - busca - caminhar na lista
+    public boolean exist(double elem) {
+        if (this.isEmpty()){
+            return false;
+        }else {
+            No atual = this.inicio;
+
+            while (atual != null){
+                if (atual.dado == elem){
+                    return true;
+                } else {
+                    atual = atual.prox;
+                }
+
+                return false;
+            }
+        }
+    }
+
     //Inserir
 
     public void entra(int elem) {
