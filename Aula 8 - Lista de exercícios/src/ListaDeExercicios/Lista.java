@@ -93,6 +93,43 @@ public class Lista {
         this.add(elem, this.size());
     }
 
+    //Remove
+    public int remove(int pos) {
+        if (this.isEmpty() || pos >= this.size() || pos < 0) {
+            System.out.println("Erro");
+            return -1;
+        }
 
+        if (pos == 0 && this.qtd == 1) {
+            No aux = this.beggin;
+            this.beggin = null;
+            this.end = null;
+
+            this.qtd--;
+            return aux.data;
+        }
+
+        if (pos == 0) {
+            No aux = this.beggin;
+            this.beggin = this.beggin.next;
+
+            this.qtd--;
+            return aux.data;
+        }
+
+        No before = this.beggin;
+        int count = 0;
+
+        while(count != pos-1) {
+            before = before.next;
+            count++;
+        }
+
+        No removed = before.next;
+        before.next = removed.next;
+
+        this.qtd--;
+        return removed.data;
+    }
 
 }
