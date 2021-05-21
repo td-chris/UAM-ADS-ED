@@ -49,17 +49,46 @@ public class Lista {
     }
 
     //Inserir
+    public void add(double elem, int pos) {
+        if (pos > this.size() || pos < 0)
+            return;
 
-    public void entra(int elem) {
-        No novo = new No(elem);
+        if (pos == 0 && this.isEmpty()) {
+            No novoNo = new No(elem);
 
-        if (this.qtd == 0) {
-            this.inicio = novo;
-            this.fim = novo;
-        } else {
-            this.fim.prox = novo;
-            this.fim = novo;
+            this.inicio = novoNo;
+            this.fim = novoNo;
+            this.qtd++;
         }
+
+        if (pos == 0 && !this.isEmpty()) {
+            No novoNo = new No(elem);
+
+            novoNo.prox = this.inicio;
+            this.inicio = novoNo;
+            this.qtd++;
+        }
+
+        if (pos == this.size()) {
+            No novoNo = new No(elem);
+
+            this.fim.prox = this.fim;
+            this.fim = novoNo;
+            this.qtd++;
+        }
+
+        No novoNo = new No(elem);
+
+        No anterior = this.inicio;
+        int count = 0;
+
+        while(count != pos -1) {
+            anterior = anterior.prox;
+            count++;
+        }
+
+        novoNo.prox = anterior.prox;
+        anterior.prox = novoNo;
 
         this.qtd++;
     }
