@@ -93,4 +93,9 @@ public class Lista {
         this.qtd++;
     }
 
+    // Add no fim
+    public void add(double elem) {
+        this.add(elem, this.size());
+    }
+
 }
