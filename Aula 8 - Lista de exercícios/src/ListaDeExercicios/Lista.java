@@ -17,4 +17,12 @@ public class Lista {
         return this.qtd;
     }
 
+    //is Empty
+    public boolean isEmpty() {
+        if (this.qtd == 0)
+            return true;
+        else
+            return false;
+    }
+
 }
