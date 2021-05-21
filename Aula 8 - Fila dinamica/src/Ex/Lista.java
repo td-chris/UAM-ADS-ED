@@ -42,9 +42,9 @@ public class Lista {
                 } else {
                     atual = atual.prox;
                 }
-
-                return false;
             }
+
+            return false;
         }
     }
 
