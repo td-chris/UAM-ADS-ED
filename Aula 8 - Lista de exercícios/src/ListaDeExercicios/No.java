@@ -7,7 +7,7 @@ public class No {
     // constructor
     public No(int data) {
         this.data = data;
-        this.prox = null
+        this.prox = null;
     }
 
 }
