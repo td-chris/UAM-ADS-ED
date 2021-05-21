@@ -132,4 +132,25 @@ public class Lista {
         return removed.data;
     }
 
+    // Ex 1
+    public boolean removeElem(int removedElem) {
+        if (this.isEmpty()){
+            return false;
+        } else {
+            No aux = this.beggin;
+            No remove = new No(removedElem);
+
+            while (aux != null) {
+                if (remove.data == removedElem){
+                    remove = remove.next;
+
+                    return true;
+                } else {
+                    aux = aux.next;
+                }
+            }
+            return false;
+        }
+    }
+
 }
