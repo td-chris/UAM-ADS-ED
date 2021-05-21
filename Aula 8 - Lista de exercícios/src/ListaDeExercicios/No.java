@@ -2,12 +2,12 @@ package ListaDeExercicios;
 
 public class No {
     public int data;
-    public No prox;
+    public No next;
 
     // constructor
     public No(int data) {
         this.data = data;
-        this.prox = null;
+        this.next = null;
     }
 
 }

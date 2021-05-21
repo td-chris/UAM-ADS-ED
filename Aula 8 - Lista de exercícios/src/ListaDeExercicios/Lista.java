@@ -25,4 +25,22 @@ public class Lista {
             return false;
     }
 
+    //Exist
+    public boolean exist(int elem) {
+        if (this.isEmpty())
+            return false;
+        else {
+            No aux = this.beggin;
+
+            while (aux != null) {
+                if (aux.data == elem)
+                    return true;
+                else
+                    aux = aux.next;
+            }
+        }
+
+        return false;
+    }
+
 }
