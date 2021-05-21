@@ -12,4 +12,9 @@ public class Lista {
         this.qtd = 0;
     }
 
+    //Size
+    public int size() {
+        return this.qtd;
+    }
+
 }
