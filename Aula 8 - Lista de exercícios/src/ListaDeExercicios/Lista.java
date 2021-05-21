@@ -88,4 +88,11 @@ public class Lista {
         this.qtd++;
     }
 
+    //Add at the end
+    public void add(int elem) {
+        this.add(elem, this.size());
+    }
+
+
+
 }
