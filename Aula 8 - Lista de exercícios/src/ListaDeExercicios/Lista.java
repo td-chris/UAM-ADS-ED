@@ -54,6 +54,7 @@ public class Lista {
             this.beggin = newNo;
             this.end = newNo;
             this.qtd++;
+            return;
         }
 
         if (pos == 0 && !this.isEmpty()){
@@ -62,6 +63,7 @@ public class Lista {
             newNo.next = this.beggin;
             this.beggin = newNo;
             this.qtd++;
+            return;
         }
 
         if (pos == this.size()) {
@@ -70,6 +72,7 @@ public class Lista {
             this.end.next = this.end;
             this.end = newNo;
             this.qtd++;
+            return;
         }
 
         No newNo = new No(elem);
