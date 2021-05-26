@@ -146,13 +146,21 @@ public class Lista {
             while (aux != null) {
                 if (remove.data == removedElem){
                     remove = remove.next;
-
+                    this.qtd--;
                     return true;
                 } else {
                     aux = aux.next;
                 }
             }
             return false;
+        }
+    }
+
+    //Ex 2
+    public void unite(Lista lista){
+
+        while (!lista.isEmpty()){
+            this.add(lista.remove(0));
         }
     }
 
