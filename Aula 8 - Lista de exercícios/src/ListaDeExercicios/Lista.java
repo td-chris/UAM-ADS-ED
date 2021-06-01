@@ -18,26 +18,20 @@ public class Lista {
     }
 
     //is Empty
-    public boolean isEmpty() {
-        if (this.qtd == 0)
-            return true;
-        else
-            return false;
-    }
+    public boolean isEmpty() { return (this.qtd == 0); }
 
     //Exist
     public boolean exist(int elem) {
         if (this.isEmpty())
             return false;
-        else {
-            No aux = this.beggin;
 
-            while (aux != null) {
-                if (aux.data == elem)
-                    return true;
-                else
-                    aux = aux.next;
-            }
+        No actual = this.inicio;
+
+        while (actual != null) {
+            if(actual.data == elem)
+                return true;
+
+            actual = actual.next;
         }
 
         return false;
@@ -69,7 +63,7 @@ public class Lista {
         if (pos == this.size()) {
             No newNo = new No(elem);
 
-            this.end.next = this.end;
+            this.end.next = newNo;
             this.end = newNo;
             this.qtd++;
             return;
@@ -92,9 +86,7 @@ public class Lista {
     }
 
     //Add at the end
-    public void add(int elem) {
-        this.add(elem, this.size());
-    }
+    public void add(int elem) { this.add(elem, this.size()); }
 
     //Remove
     public int remove(int pos) {
