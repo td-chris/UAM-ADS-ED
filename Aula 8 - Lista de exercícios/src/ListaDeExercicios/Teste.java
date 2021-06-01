@@ -23,6 +23,10 @@ public class Teste {
 
         System.out.println(list.size());
 
+        while (!list.isEmpty()){
+            System.out.println(list.remove(0));
+        }
+
 
 
     }
