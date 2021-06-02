@@ -25,7 +25,7 @@ public class Lista {
         if (this.isEmpty())
             return false;
 
-        No actual = this.inicio;
+        No actual = this.beggin;
 
         while (actual != null) {
             if(actual.data == elem)
@@ -154,6 +154,30 @@ public class Lista {
         while (!lista.isEmpty()){
             this.add(lista.remove(0));
         }
+    }
+
+    //Ex 3
+    public int bigger() {
+        No aux = this.beggin;
+        int bigger = 0;
+        int count = 1;
+
+        while (count != this.size()){
+
+            int actual = aux.data;
+
+            if (actual < aux.next.data){
+                bigger = aux.next.data;
+            } else {
+                bigger = actual;
+            }
+
+
+            aux = aux.next;
+            count++;
+        }
+
+        return bigger;
     }
 
 }
