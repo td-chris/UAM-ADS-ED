@@ -180,4 +180,22 @@ public class Lista {
         return bigger;
     }
 
+    // ordened insertion
+    public void ordenedAdd(int elem) {
+        No actual = this.beggin;
+        int count = 0;
+
+        while(actual != null) {
+            if (actual.data > elem){
+                this.add(elem,count);
+                return;
+            }
+
+            actual = actual.next;
+            count++;
+        }
+
+        this.add(elem);
+    }
+
 }
