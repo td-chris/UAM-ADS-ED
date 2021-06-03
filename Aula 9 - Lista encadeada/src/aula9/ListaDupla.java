@@ -24,4 +24,21 @@ public class ListaDupla {
         return (this.qtd == 0);
     }
 
+    // buscar
+    public boolean exist(double elem) {
+        if (this.isEmpty())
+            return false;
+
+        No atual = this.inicio;
+
+        while (atual != null) {
+            if (atual.dado == elem)
+                return true;
+
+            atual = atual.prox;
+        }
+
+        return false;
+    }
+
 }

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4d9db88-8572-4c3c-94de-291022d90907" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aula9/ListaDupla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula9/ListaDupla.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -79,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622760752193</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Feat: create the isEmpty method">
+      <created>1622760832154</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1622760832154</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +105,7 @@
     <MESSAGE value="Feat: create new project, No file and constructor" />
     <MESSAGE value="Feat: create the constructor of ListaDupla file" />
     <MESSAGE value="Feat: create the size method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: create the size method" />
+    <MESSAGE value="Feat: create the isEmpty method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: create the isEmpty method" />
   </component>
 </project>
