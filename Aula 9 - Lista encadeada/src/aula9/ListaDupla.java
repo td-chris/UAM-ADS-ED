@@ -41,4 +41,59 @@ public class ListaDupla {
         return false;
     }
 
+    //Inserir em posição
+    public void add(double elem, int pos) {
+        if (pos > this.size() || pos < 0)
+            return;
+
+        if (this.isEmpty() && pos == 0) {
+            No novo = new No(elem);
+            this.inicio = novo;
+            this.fim = novo;
+            this.qtd++;
+            return;
+        }
+
+        if (pos == 0) {
+            No novo = new No(elem);
+            novo.prox = this.inicio;
+            this.inicio.ant = novo;
+            this.inicio = novo;
+            this.qtd++;
+            return;
+        }
+
+        if (pos == this.size()) {
+            No novo = new No(elem);
+            novo.ant = this.fim;
+            this.fim.prox = novo;
+            this.fim = novo;
+            this.qtd++;
+            return;;
+        }
+
+        No novo = new No(elem);
+
+        No anterior = this.inicio;
+        int cont = 0;
+
+        while (anterior != null){
+            if (cont == pos -1){
+                break;
+            }
+
+            anterior = anterior.prox;
+            cont++;
+        }
+
+        No posterior = anterior.prox;
+        anterior.prox = novo;
+        novo.ant = anterior;
+
+        posterior.ant = novo;
+        novo.prox = posterior;
+
+        this.qtd++;
+    }
+
 }
