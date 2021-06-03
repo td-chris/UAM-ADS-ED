@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4d9db88-8572-4c3c-94de-291022d90907" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aula9/ListaDupla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula9/ListaDupla.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -66,7 +65,21 @@
       <option name="project" value="LOCAL" />
       <updated>1622683535348</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Feat: create the constructor of ListaDupla file">
+      <created>1622760710181</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622760710181</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Feat: create the size method">
+      <created>1622760752193</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1622760752193</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -82,6 +95,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Feat: create new project, No file and constructor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: create new project, No file and constructor" />
+    <MESSAGE value="Feat: create the constructor of ListaDupla file" />
+    <MESSAGE value="Feat: create the size method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: create the size method" />
   </component>
 </project>

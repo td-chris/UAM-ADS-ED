@@ -19,4 +19,9 @@ public class ListaDupla {
         return this.qtd;
     }
 
+    //Vazio
+    public boolean isEmpty() {
+        return (this.qtd == 0);
+    }
+
 }
