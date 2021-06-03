@@ -1,91 +1,92 @@
 package Ex;
 
-//TAD Fila dinâmica de double
+// TAD Lista de double
 
 public class Lista {
-
     private No inicio;
     private No fim;
     private int qtd;
 
-    //Construtor
+    //	Construtor
     public Lista() {
-        this.inicio= null;
+        this.inicio = null;
         this.fim = null;
         this.qtd = 0;
     }
 
-    // Tamanho
+    //	Tamanho
     public int size() {
         return this.qtd;
     }
 
-    // Vazio
+    //	Est� vazio
     public boolean isEmpty() {
-        if (this.qtd == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return (this.qtd == 0);
     }
 
-    // Existe - busca - caminhar na lista
+    //	Busca, se existe
     public boolean exist(double elem) {
-        if (this.isEmpty()){
+        if(this.isEmpty())
             return false;
-        }else {
-            No atual = this.inicio;
 
-            while (atual != null){
-                if (atual.dado == elem){
-                    return true;
-                } else {
-                    atual = atual.prox;
-                }
-            }
+        No atual = this.inicio;
 
-            return false;
+        while(atual != null) {
+            if(atual.dado == elem)
+                return true;
+
+            atual = atual.prox;
         }
+
+        return false;
     }
 
-    //Inserir
+    //	Inserir
     public void add(double elem, int pos) {
-        if (pos > this.size() || pos < 0)
+        if(pos > this.size() || pos < 0)
             return;
 
-        if (pos == 0 && this.isEmpty()) {
+        if(pos == 0 && this.isEmpty()) {
             No novoNo = new No(elem);
-
             this.inicio = novoNo;
             this.fim = novoNo;
             this.qtd++;
+            return;
         }
 
-        if (pos == 0 && !this.isEmpty()) {
-            No novoNo = new No(elem);
-
+        if(pos == 0 && !this.isEmpty()) {
+            No novoNo = new No (elem);
             novoNo.prox = this.inicio;
             this.inicio = novoNo;
             this.qtd++;
+            return;
         }
 
-        if (pos == this.size()) {
+        if(pos == this.size()) {
             No novoNo = new No(elem);
-
-            this.fim.prox = this.fim;
+            this.fim.prox  = novoNo;
             this.fim = novoNo;
             this.qtd++;
+            return;
         }
 
         No novoNo = new No(elem);
 
         No anterior = this.inicio;
-        int count = 0;
+        int cont = 0;
 
-        while(count != pos -1) {
+        while(cont != pos-1) {
             anterior = anterior.prox;
-            count++;
+            cont++;
         }
+
+//		while(anterior != null) {
+//			if (cont == pos-1)
+//				break;
+//
+//			anterior = anterior.prox;
+//			cont++;
+//		}
 
         novoNo.prox = anterior.prox;
         anterior.prox = novoNo;
@@ -93,48 +94,49 @@ public class Lista {
         this.qtd++;
     }
 
-    // Add no fim
+    //	Add no fim
     public void add(double elem) {
         this.add(elem, this.size());
     }
 
-    //Remover
+    //	Remover
     public double remove(int pos) {
-        if (this.isEmpty() || pos >= this.size() || pos < 0){
-            System.out.println("Erro");
+        if(this.isEmpty() || pos >= this.size() || pos < 0) {
+            System.out.println("Erro!");
             return -1.0;
         }
 
-        if (pos == 0 && this.qtd == 1) {
-            No aux = this.inicio;
+        if(pos == 0 && this.qtd == 1) {
+            No temp = this.inicio;
             this.inicio = null;
             this.fim = null;
-
             this.qtd--;
-            return aux.dado;
+            return temp.dado;
         }
 
-        if (pos == 0) {
-            No aux = this.inicio;
+        if(pos == 0) {
+            No temp = this.inicio;
             this.inicio = this.inicio.prox;
-
             this.qtd--;
-            return aux.dado;
+            return temp.dado;
         }
 
         No anterior = this.inicio;
-        int count = 0;
+        int cont = 0;
 
-        while (count != pos-1) {
+        while(cont != pos-1) {
             anterior = anterior.prox;
-            count++;
+            cont++;
         }
 
         No removido = anterior.prox;
+
         anterior.prox = removido.prox;
 
         this.qtd--;
+
         return removido.dado;
+
     }
 
 }
