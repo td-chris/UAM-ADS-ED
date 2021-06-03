@@ -14,4 +14,9 @@ public class ListaDupla {
         this.qtd = 0;
     }
 
+    // Tamanho
+    public int size() {
+        return this.qtd;
+    }
+
 }
