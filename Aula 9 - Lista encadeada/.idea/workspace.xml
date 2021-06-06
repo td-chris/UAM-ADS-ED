@@ -94,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622760991559</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Feat: create the add method">
+      <created>1622762643083</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1622762643083</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -114,6 +121,7 @@
     <MESSAGE value="Feat: create the size method" />
     <MESSAGE value="Feat: create the isEmpty method" />
     <MESSAGE value="Feat: create the exist method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: create the exist method" />
+    <MESSAGE value="Feat: create the add method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: create the add method" />
   </component>
 </project>

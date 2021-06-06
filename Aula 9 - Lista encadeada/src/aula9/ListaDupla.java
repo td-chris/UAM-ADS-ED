@@ -69,7 +69,7 @@ public class ListaDupla {
             this.fim.prox = novo;
             this.fim = novo;
             this.qtd++;
-            return;;
+            return;
         }
 
         No novo = new No(elem);
@@ -96,4 +96,62 @@ public class ListaDupla {
         this.qtd++;
     }
 
+    //Remover da posição
+
+    public double remove(int pos) {
+        if(pos >= this.size() || pos< 0 || this.isEmpty()){
+            System.out.println("Erro!");
+            return -1.0;
+        }
+
+        if(pos == 0 && this.size() == 1) {
+            No removido = this.inicio;
+
+            this.inicio = null;
+            this.fim = null;
+            this.qtd--;
+
+            return removido.dado;
+        }
+
+        if (pos == 0) {
+            No removido = this.inicio;
+
+            this.inicio = this.inicio.prox;
+            this.inicio.ant = null;
+
+            this.qtd--;
+            return removido.dado;
+        }
+
+        if(pos == this.size()-1) {
+            No removido = this.fim;
+            this.fim = this.fim.ant;
+            this.fim.prox = null;
+
+            this.qtd--;
+            return removido.dado;
+        }
+
+        No removido = this.inicio;
+        int cont = 0;
+
+        while (removido != null) {
+
+            if (cont == pos)
+                break;
+
+            removido = removido.prox;
+            cont++;
+        }
+
+        No anterior = removido.ant;
+        No proximo = removido.prox;
+
+        anterior.prox = proximo;
+        anterior.ant = anterior;
+
+        this.qtd--;
+        return removido.dado;
+    }
 }
