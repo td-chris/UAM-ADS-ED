@@ -129,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622947468437</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Feat: create the ordenedAdd method&#10;OBS.: ex 1">
+      <created>1623198557153</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1623198557153</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -153,6 +160,7 @@
     <MESSAGE value="Feat: create the exist method" />
     <MESSAGE value="Feat: create the add method" />
     <MESSAGE value="Feat: create the remove method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: create the remove method" />
+    <MESSAGE value="Feat: create the ordenedAdd method&#10;OBS.: ex 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: create the ordenedAdd method&#10;OBS.: ex 1" />
   </component>
 </project>

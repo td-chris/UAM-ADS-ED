@@ -13,7 +13,8 @@ public class Teste {
 
         System.out.println("Resultado");
 
-        System.out.println(lista.remove(0));
+        System.out.println(lista.removeItem(10));
+        System.out.println(lista.removeItem(1));
     }
 
 }
