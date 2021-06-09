@@ -154,4 +154,21 @@ public class ListaDupla {
         this.qtd--;
         return removido.dado;
     }
+
+    // Ex 1 - Adição ordenada
+
+    public void ordenedAdd(double elem) {
+        No atual = this.inicio;
+        int cont = 0;
+
+        while(atual != null) {
+            if (atual.dado > elem)
+                break;
+
+            atual = atual.prox;
+            cont++;
+        }
+
+        this.add(elem, cont);
+    }
 }

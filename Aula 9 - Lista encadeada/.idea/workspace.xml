@@ -4,6 +4,7 @@
     <list default="true" id="b4d9db88-8572-4c3c-94de-291022d90907" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/aula9/ListaDupla.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula9/ListaDupla.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/aula9/Teste.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula9/Teste.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,6 +48,26 @@
         </RuleState>
       </list>
     </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="aula9.Teste" />
+      <module name="Aula 9 - Lista encadeada" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="aula9.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Teste" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -101,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622762643083</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Feat: create the remove method">
+      <created>1622947468437</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1622947468437</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,7 +137,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -122,6 +152,7 @@
     <MESSAGE value="Feat: create the isEmpty method" />
     <MESSAGE value="Feat: create the exist method" />
     <MESSAGE value="Feat: create the add method" />
-    <option name="LAST_COMMIT_MESSAGE" value="Feat: create the add method" />
+    <MESSAGE value="Feat: create the remove method" />
+    <option name="LAST_COMMIT_MESSAGE" value="Feat: create the remove method" />
   </component>
 </project>
