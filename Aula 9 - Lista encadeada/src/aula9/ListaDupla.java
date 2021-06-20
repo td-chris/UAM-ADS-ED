@@ -154,4 +154,48 @@ public class ListaDupla {
         this.qtd--;
         return removido.dado;
     }
+
+    // Ex 1 - Adição ordenada
+
+    public void ordenedAdd(double elem) {
+        No atual = this.inicio;
+        int cont = 0;
+
+        while(atual != null) {
+            if (atual.dado > elem)
+                break;
+
+            atual = atual.prox;
+            cont++;
+        }
+
+        this.add(elem, cont);
+    }
+
+    // Ex 2 - escolher o elemento a ser removido
+
+    public boolean removeItem(double elem){
+        if (this.isEmpty()){
+            System.out.println("Erro");
+            return false;
+        }
+
+        No atual = this.inicio;
+        int cont = 0;
+
+        while (atual != null) {
+            if (atual.dado == elem)
+                break;
+
+            atual = atual.prox;
+            cont++;
+        }
+
+        if (atual != null){
+            this.remove(cont);
+            return true;
+        } else {
+            return false;
+        }
+    }
 }
